@@ -1,11 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.ComTypes;
-using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Assets.Scripts
 {
@@ -70,7 +64,7 @@ namespace Assets.Scripts
             int x = LastPressedTile.XY.x;
             int y = LastPressedTile.XY.y;
             bool wasPressedByPlayer = LastPressedTile.WasPressedByPlayer;
-            var hasWon = CheckIfWonInColumn(x, y, wasPressedByPlayer) || CheckIfWonInRow(x, y, wasPressedByPlayer);
+            var hasWon = CheckIfWonInColumn(x, y, wasPressedByPlayer) || CheckIfWonInRow(x, y, wasPressedByPlayer) || CheckIfWonInDiagonal(x, y, wasPressedByPlayer);
             if (hasWon)
             {
                 Winner = wasPressedByPlayer ? GameResult.Player : GameResult.Bot;
@@ -174,35 +168,37 @@ namespace Assets.Scripts
             return false;
         }
 
-/*    private bool CheckIfWonInDiagonal(int x, int y, bool wasPressedByPlayer)
-    {
-        int leftDownDistance = Math.Max(Math.Min(x, y), 4);
-        int distanceTillRight = TilesInRow - x - 1;
-        int rightDownDistance = Math.Min( Math.Min(distanceTillRight, y), TilesInRow - 1);
-        Vector2Int leftDownXY = new Vector2Int(x - leftDownDistance, y - leftDownDistance);
-        Vector2Int rightDownXY = new Vector2Int(x + rightDownDistance, y - rightDownDistance);
-        int count = 0;
+        private bool CheckIfWonInDiagonal(int x, int y, bool wasPressedByPlayer)
+        {
+            int leftDownDistance = Math.Min(Math.Min(x, y), 4);
+            int distanceTillRight = TilesInRow - x - 1;
+            int rightDownDistance = Math.Min(Math.Min(distanceTillRight, y), TilesInRow - 1);
+            Vector2Int leftDownXY = new Vector2Int(x - leftDownDistance, y - leftDownDistance);
+            Vector2Int rightDownXY = new Vector2Int(x + rightDownDistance, y - rightDownDistance);
+            int count = 0;
 
-        int rightUpX = Math.Min(x + 4, TilesInRow);
-        int rightUpY = Math.Min(y + 4, TilesInColumn);
-        for (; leftDownXY.x <= TilesInRow && leftDownXY.y <= TilesInColumn; leftDownXY.x++, leftDownXY.y++)
-        {
-            IncreaseCountIfMatches(ref count, i, y, wasPressedByPlayer);
-            if (count == 5)
+            const int maxIter = 10;
+            for (int i = 0; leftDownXY.x < TilesInRow && leftDownXY.y < TilesInColumn && i < maxIter; leftDownXY.x++, leftDownXY.y++, i++)
             {
-                return true;
+                Debug.Log(String.Format("Checking leftDown ({0},{1})", leftDownXY.x, leftDownXY.y));
+                IncreaseCountIfMatches(ref count, leftDownXY.x, leftDownXY.y, wasPressedByPlayer);
+                if (count == 5)
+                {
+                    return true;
+                }
             }
-        }   
-        for (int i = lowerBound; i <= upperBound; i++)
-        {
-            IncreaseCountIfMatches(ref count, x, i, wasPressedByPlayer);
-            if (count == 5)
+            for (int i =0; rightDownXY.x >= 0 && rightDownXY.y < TilesInColumn && i < maxIter; rightDownXY.x--, rightDownXY.y++, i++)
             {
-                return true;
+                Debug.Log(String.Format("Checking rightDown ({0},{1})", rightDownXY.x, rightDownXY.y));
+                IncreaseCountIfMatches(ref count, rightDownXY.x, rightDownXY.y, wasPressedByPlayer);
+                if (count == 5)
+                {
+                    return true;
+                }
             }
+            return false;
         }
-        return false;
-    }*/
+
         private void IncreaseCountIfMatches(ref int count, int x, int y, bool wasPressedByPlayer)
         {
             if (Tiles[x, y].IsPressed() && Tiles[x, y].WasPressedByPlayer == wasPressedByPlayer)

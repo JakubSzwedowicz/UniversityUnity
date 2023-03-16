@@ -1,15 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using TMPro.EditorUtilities;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
-using UnityEditorInternal;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem.LowLevel;
-using UnityEngine.InputSystem.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -26,6 +18,7 @@ namespace Assets.Scripts
         [SerializeField] private Canvas _gameFinishedCanvas;
         private Board _board;
         private GraphicRaycaster _graphicRaycaster;
+        private Canvas _gameCanva;
         private StateMachine _stateMachine;
         private Bot _bot;
         private int _tilesInRow;
@@ -54,6 +47,7 @@ namespace Assets.Scripts
                     break;
             }
             _winnerName.text = _board.Winner.ToString();
+            Debug.Log("DUPA"); 
             _gameFinishedCanvas.enabled = true;
         }
 
@@ -104,6 +98,7 @@ namespace Assets.Scripts
         private void Awake()
         {
             _graphicRaycaster = GetComponent<GraphicRaycaster>();
+            _gameCanva = GetComponent<Canvas>();
         }
 
         private void Start()
@@ -140,22 +135,15 @@ namespace Assets.Scripts
 
         private void InitCamera()
         {
-/*            RectTransform rect = GetComponent<RectTransform>();
-            float canvasHeight = rect.rect.height;
-            float desiredCanvasWidth = canvasHeight * Camera.main.aspect;
-            rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, desiredCanvasWidth);*/
             _camera.transform.position =
-                new Vector3((float)_tilesInRow / 2 - 0.5f, (float)_tilesInColumn / 2 - 0.5f, -10);
-/*            _camera.rect = new Rect((float)_tilesInRow / 2 - 0.5f, (float)_tilesInColumn / 2 - 0.5f, 0, 0);
-            _camera.localScale = new Vector3((float)_tilesInRow, (float)_tilesInColumn, 1);*/
-
+                new Vector3((float)_tilesInRow / 2 - 0.5f, (float)_tilesInColumn / 2 + 0.1f, -1* (_tilesInColumn));
         }
 
         private void InitBoard()
         {
             if (_board == null)
             {
-                _board = Instantiate(_boardPrefab, Vector3.zero, Quaternion.identity, this.transform);
+                _board = Instantiate(_boardPrefab, new Vector3(0, 0), Quaternion.identity, this.transform);
             }
 
             _board.Init(_tilesInRow, _tilesInColumn);
