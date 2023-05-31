@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>ec13412f76629614d97aa184da040fea</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2022-12-13T19:37:40+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetCollector</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a75c751cfdf6f494599d7418c3bc03f6</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2022-12-13T19:37:40+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c2a858153cfb56944939884bab5d805f</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2022-12-13T19:37:40+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ClassReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5c120c02616626c4f9ad3d855612cf35</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
+    <timeStamp>2022-12-13T19:37:40+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.CollectionData</string>
+      <string>UnitySweeper.TypeDate</string>
+      <string>UnitySweeper.IReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>83ffb6e9b613a514f921c69d39bf7985</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2022-12-13T19:37:40+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.FindUnusedAssetsWindow</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cfcf3d8c49f7a484997dff4602e4568d</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2022-12-13T19:37:40+01:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ShaderReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7148842856d75774880e207b9c715bf4</guid>
+    <fileName>Assets/Scripts/Blockade.cs</fileName>
+    <timeStamp>2023-03-30T06:04:14.88647+02:00</timeStamp>
+    <typeFullName>
+      <string>Blockade</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a83bf58c4d792cf4f9f2e645bff7588d</guid>
+    <fileName>Assets/Scripts/CameraController.cs</fileName>
+    <timeStamp>2023-03-30T16:02:10.8310107+02:00</timeStamp>
+    <typeFullName>
+      <string>CameraController</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5f7fa48db4884f047a6d3a7ea9d7a27d</guid>
+    <fileName>Assets/Scripts/Door.cs</fileName>
+    <timeStamp>2023-03-30T15:54:54.9973379+02:00</timeStamp>
+    <typeFullName>
+      <string>Door</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>24e539c4b2115624fa9843ec7c8b5dcb</guid>
+    <fileName>Assets/Scripts/Meta.cs</fileName>
+    <timeStamp>2023-03-30T15:53:08.3343081+02:00</timeStamp>
+    <typeFullName>
+      <string>Meta</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f7011835da04fce419cd6bae61becd24</guid>
+    <fileName>Assets/Scripts/MovingPlatform.cs</fileName>
+    <timeStamp>2023-03-31T21:40:29.6861968+02:00</timeStamp>
+    <typeFullName>
+      <string>MovingPlatform</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bb09e3f33c7340c428973227b25effb1</guid>
+    <fileName>Assets/Scripts/Projectile.cs</fileName>
+    <timeStamp>2023-03-30T12:12:45.0542681+02:00</timeStamp>
+    <typeFullName>
+      <string>Projectile</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6547de873fa5f9a4bb805a2f95664fb9</guid>
+    <fileName>Assets/Scripts/SoundManager.cs</fileName>
+    <timeStamp>2023-03-30T08:18:35.9421448+02:00</timeStamp>
+    <typeFullName>
+      <string>SoundManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>39d222330b0b84f4abfb2455e7c6cae5</guid>
+    <fileName>Assets/Scripts/UnitDamage.cs</fileName>
+    <timeStamp>2023-03-30T13:57:21.8202577+02:00</timeStamp>
+    <typeFullName>
+      <string>UnitDamage</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>80128303db0eeb343af8b96773d4a2fc</guid>
+    <fileName>Assets/Scripts/Health/Health.cs</fileName>
+    <timeStamp>2023-03-30T13:03:27.7302849+02:00</timeStamp>
+    <typeFullName>
+      <string>Health</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e8372290f3972034f8e702539cf5c4d0</guid>
+    <fileName>Assets/Scripts/Health/Healthbar.cs</fileName>
+    <timeStamp>2023-03-31T22:04:44.2761573+02:00</timeStamp>
+    <typeFullName>
+      <string>Healthbar</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3caf58e764385b74a8102a259ce7d38c</guid>
+    <fileName>Assets/Scripts/Health/Heart.cs</fileName>
+    <timeStamp>2023-03-31T21:39:51.4801494+02:00</timeStamp>
+    <typeFullName>
+      <string>Heart</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>881a801602153c046b21787e11519135</guid>
+    <fileName>Assets/Scripts/Health/UnitRespawn.cs</fileName>
+    <timeStamp>2023-03-31T22:10:06.1659304+02:00</timeStamp>
+    <typeFullName>
+      <string>UnitRespawn</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>46c6efa3c75d7af4c88e2fd7c52de25e</guid>
+    <fileName>Assets/Scripts/Player/Player.cs</fileName>
+    <timeStamp>2023-03-31T22:48:22.0303005+02:00</timeStamp>
+    <typeFullName>
+      <string>Player</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7378307b8e7dfc04492fe56ab9b26654</guid>
+    <fileName>Assets/Scripts/Player/PlayerAttack.cs</fileName>
+    <timeStamp>2023-03-30T12:12:30.358725+02:00</timeStamp>
+    <typeFullName>
+      <string>PlayerAttack</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>93a5ca51508d5d742be6930e860b6770</guid>
+    <fileName>Assets/Scripts/Player/PlayerMovement.cs</fileName>
+    <timeStamp>2023-03-30T08:08:55.5108759+02:00</timeStamp>
+    <typeFullName>
+      <string>PlayerMovement</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+</ArrayOfTypeDate>

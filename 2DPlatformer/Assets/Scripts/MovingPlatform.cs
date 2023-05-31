@@ -42,7 +42,6 @@ public class MovingPlatform : MonoBehaviour
         _currentIdleTime += Time.deltaTime;
         if (_currentIdleTime >= _defaultIdleTime)
         {
-            Debug.Log("Reversing direction to: " + _movingLeft);
             _currentIdleTime = 0;
             _movingLeft = !_movingLeft;
         }
@@ -50,7 +49,6 @@ public class MovingPlatform : MonoBehaviour
 
     private void MoveInDirection(int direction)
     {
-        Debug.Log("Moving to new position:" + gameObject.transform.position.x);
         gameObject.transform.position =
             new Vector2(gameObject.transform.position.x + Time.deltaTime * direction * _speed,
                 gameObject.transform.position.y);
