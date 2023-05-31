@@ -9,19 +9,18 @@ public class TimerController : MonoBehaviour
 {
     public Text TimeCounter;
 
-    private TimeSpan _timePlaying;
-    private bool _timerGoing;
-    private float _elapsedTime;
+    public TimeSpan _timePlaying;
+    public bool _timerGoing;
+    public float _elapsedTime;
 
-    void Start()
+    private void Awake()
     {
         TimeCounter.text = "Time: 00:00:00";
         _timerGoing = false;
-
     }
-
     public void BeginTimer()
     {
+        TimeCounter.text = "Time: 00:00:00";
         _timerGoing = true;
         _elapsedTime = 0f;
         StartCoroutine(UpdateTimer());
